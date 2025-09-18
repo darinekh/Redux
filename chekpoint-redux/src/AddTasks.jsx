@@ -4,9 +4,12 @@ import { addTask } from './features/tasksSlice'
 
 
 function AddTasks() {
+      // Local state to store the input value
     const [value, setValue] = useState("")
+      // useDispatch hook to dispatch actions to Redux
     const dispatch = useDispatch()
 
+    // Function called when form is submitted
     function onSubmit(e) {
         e.preventDefault();
         if (value.trim() !== "") {

@@ -1,5 +1,7 @@
 import React from "react";
 
+
+// A demo component showcasing multiple modern UI design styles
 const ModernStylesDemo = () => (
   <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-purple-900 py-12 px-4 flex flex-col gap-12">
     {/* Glassmorphism */}

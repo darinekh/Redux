@@ -2,9 +2,10 @@ import { useDispatch, useSelector } from 'react-redux'
 import { setFilter } from './features/tasksSlice'
 
 function FilterTasks() {
-  const dispatch = useDispatch()
-  const currentFilter = useSelector(state => state.tasks.filter)
+  const dispatch = useDispatch()            // Hook to dispatch actions
+  const currentFilter = useSelector(state => state.tasks.filter)   // Get current filter from Redux state
 
+   // Button component for filter options
   const Btn = ({id, label}) => {
     return (
       <button
